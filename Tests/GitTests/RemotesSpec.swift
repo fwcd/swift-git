@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 GitHub, Inc. All rights reserved.
 //
 
-import SwiftGit2
+import Git
 import Nimble
 import Quick
 import Clibgit2

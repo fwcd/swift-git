@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftGit2
+import Git
 import Nimble
 import Quick
 

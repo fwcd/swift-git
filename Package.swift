@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-	name: "SwiftGit2",
+	name: "swift-git",
 	platforms: [
 		.macOS(.v10_11),
 		.iOS("9.2"),
 	],
 	products: [
 		.library(
-			name: "SwiftGit2",
-			targets: ["SwiftGit2"]
+			name: "Git",
+			targets: ["Git"]
 		),
 	],
 	dependencies: [
@@ -30,16 +30,16 @@ let package = Package(
 			]
 		),
 		.target(
-			name: "SwiftGit2",
+			name: "Git",
 			dependencies: [
 				.target(name: "Clibgit2"),
 			],
 			exclude: ["Info.plist"]
 		),
 		.testTarget(
-			name: "SwiftGit2Tests",
+			name: "GitTests",
 			dependencies: [
-				.target(name: "SwiftGit2"),
+				.target(name: "Git"),
 				.product(name: "Quick", package: "Quick"),
 				.product(name: "Nimble", package: "Nimble"),
 				.product(name: "Zip", package: "Zip"),

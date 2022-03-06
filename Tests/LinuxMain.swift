@@ -1,7 +1,7 @@
 import XCTest
 import Quick
 
-@testable import SwiftGit2Tests
+@testable import GitTests
 
 QCKMain([
     FixturesSpec.self,
